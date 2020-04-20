@@ -1,0 +1,45 @@
+:root {
+    --hue: 180;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 1rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+section h1 {
+    font-size: 2rem;
+    color: palevioletred;
+}
+
+.bttn {
+    padding: 2rem 0;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+
+/* genrate cate */
+
+.catbtn {
+    background-color: hsl(calc(var(--hue) - 40), 100%, 50%);
+}
+
+.imgg {
+    width: 100%;
+}
