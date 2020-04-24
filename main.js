@@ -13,6 +13,9 @@
 //         img.setAttribute('id', 'image');
 // }
 
+
+let catG = document.querySelector('.catbtn');
+
 function ajax_get(url, callback) {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
@@ -32,6 +35,8 @@ function ajax_get(url, callback) {
     xmlhttp.send();
 }
 
+
+catG.addEventListener('click', gen);
 
 
 function gen() {
