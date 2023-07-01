@@ -122,7 +122,7 @@ function Gallery({ isLoading, cats, cat }) {
   return (
     <div>
       {isLoading ? (
-        <div className='grid place-content-center w-full p-5 '>
+        <div className='grid place-content-center w-full p-5 h-screen'>
           <Loading />
         </div>
       ) : (
