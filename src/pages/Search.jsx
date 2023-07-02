@@ -53,7 +53,7 @@ const Search = () => {
   }, [cat, breed, type]);
 
   return (
-    <div className='container md:w-4/5 m-auto p-5 flex flex-col h-screen overflow-hidden'>
+    <div className='container md:w-4/5 m-auto p-5 flex flex-col  overflow-hidden'>
       <div className='flex flex-wrap items-center lg:justify-evenly justify-center gap-3'>
         <div className='bg-orange-500 rounded-xl flex'>
           <Select
