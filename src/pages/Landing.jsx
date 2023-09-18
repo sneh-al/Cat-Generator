@@ -13,7 +13,7 @@ const Landing = () => {
 
   return (
     <div className='  flex flex-col     '>
-      <div className='relative min-h-screen rounded-b-3xl border-orange-300   overflow-hidden flex lg:justify-around  justify-evenly flex-col  border-b-4 '>
+    <div className='relative min-h-screen rounded-b-3xl border-orange-300   overflow-hidden flex lg:justify-around  justify-evenly flex-col  border-b-4 '>
         <div className=' w-full grid place-content-center px-5 z-10  '>
           <h1 className='text-5xl font-extrabold text-orange-700'>PurrPix</h1>
           <p className='text-xl py-4'>Discover the World of Feline Wonders.</p>
