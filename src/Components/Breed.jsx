@@ -6,6 +6,7 @@ import {
 import { useState } from "react";
 import PawSvg from "../assets/paw.svg";
 
+
 const Breed = ({ breed }) => {
   const [isMore, setMore] = useState(false);
   const {
@@ -185,3 +186,6 @@ const ExternalLink = ({ href, title }) => (
     <ArrowTopRightOnSquareIcon className='w-6 h-6 ml-2' />
   </a>
 );
+
+
+

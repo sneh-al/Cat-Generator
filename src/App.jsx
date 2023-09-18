@@ -17,6 +17,7 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import { setBreedsList, setCatagories } from "./slice/catSlice";
 import { useEffect } from "react";
+import toast from "react-hot-toast";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -31,16 +32,17 @@ const router = createBrowserRouter(
 
 function App() {
   const { breeds } = useSelector((state) => state.cat);
-  const [getBreeds, { isLoading }] = useGetBreedsMutation();
+  const [getBreeds] = useGetBreedsMutation();
   const [getCat] = useGetCategoriesMutation();
   const dispatch = useDispatch();
+  
   const getBreedsApi = async () => {
     try {
       const res = await getBreeds().unwrap();
-      console.log(res);
       dispatch(setBreedsList(res));
     } catch (error) {
-      console.log(error);
+           toast.error(error?.data?.message);
+
     }
   };
   const getCategory = async () => {
@@ -48,7 +50,8 @@ function App() {
       const res = await getCat().unwrap();
       dispatch(setCatagories(res));
     } catch (error) {
-      console.error(error);
+          toast.error(error?.data?.message);
+
     }
   };
 
